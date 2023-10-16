@@ -547,6 +547,11 @@ address {
   letter-spacing: 0.02em;
 }
 
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
 .sub-footer-input {
   width: 264px;
   height: 40px;
@@ -561,10 +566,6 @@ address {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
-}
-
-.footer-sub-btn {
-  display: flex;
 }
 
 .footer-form-btn {
