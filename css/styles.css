@@ -533,6 +533,54 @@ address {
 .social-media-item-icon {
   fill: #f4f4fd;
 }
+.subscribe-container {
+  margin-left: 80px;
+}
+
+.subscribe-container-title {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.sub-footer-input {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.footer-sub-btn {
+  position: relative;
+  margin-left: 24px;
+  right: 0;
+}
+.footer-form-btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #4d5ae5;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.form-btn-icon {
+  margin-left: 16px;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ============================================================== */
 .backdrop {
@@ -623,6 +671,9 @@ address {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
+.modal-form {
+  position: relative;
+}
 
 .modal-icon {
   color: #4d5ae5;
@@ -662,11 +713,17 @@ address {
   height: 16px;
   stroke-width: 1px;
   stroke: rgba(46, 47, 66, 0.4);
+  color: #8e8f99;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 .check-text {
   width: 338px;
   color: #8e8f99;
-
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -687,13 +744,14 @@ address {
 
 .modal-btn-send {
   display: inline-flex;
-  padding: 16px 32px;
+  width: 105px;
+  height: 24px;
   align-items: flex-start;
   gap: 10px;
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 105px;
+  border-bottom: 16px;
   color: #fff;
   text-align: center;
   font-family: Roboto;
@@ -703,4 +761,22 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   position: absolute;
+  right: 120px;
+}
+
+.check-privacy {
+  color: #4d5ae5;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+}
+
+.check-input:checked + .check-text span {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
 }
