@@ -735,12 +735,6 @@ address {
   border-color: #4d5ae5;
 }
 
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
 .modal-checkbox {
   width: 16px;
   height: 16px;
