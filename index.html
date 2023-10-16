@@ -475,29 +475,27 @@
             </li>
           </ul>
         </div>
-
         <div class="subscribe-container">
           <p class="subscribe-container-title">Subscribe</p>
           <form class="footer-form">
+            <label for="sub-footer-input" class="sub-label"></label>
             <input
               type="email"
               class="sub-footer-input"
-              placeholder="Email"
+              id="sub-footer-input"
+              placeholder="E-mail"
               aria-label="Email-input"
             />
+            <button type="submit" class="footer-form-btn">
+              Subscribe
+              <svg class="form-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
           </form>
-        </div>
-        <div class="footer-sub-btn">
-          <button type="submit" class="footer-form-btn">
-            Subscribe
-            <svg class="form-btn-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-telegram"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
-
     <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn">
@@ -552,7 +550,7 @@
             </div>
           </div>
           <div class="modal-field">
-            <label for="user-text" class="modal-label">Comment</label>
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
               name="user-text"
               id="user-text"
@@ -579,7 +577,5 @@
         </form>
       </div>
     </div>
-  </body>
-</html>
   </body>
 </html>
