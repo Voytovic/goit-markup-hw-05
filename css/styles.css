@@ -32,6 +32,9 @@ a {
   color: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+p {
+  margin: 0;
+}
 button {
   cursor: pointer;
 }
@@ -598,8 +601,8 @@ address {
   left: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   /* opacity: 0;
   visibility: hidden;
   pointer-events: none; */
@@ -616,8 +619,8 @@ address {
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-btn {
   position: absolute;
@@ -698,9 +701,6 @@ address {
   letter-spacing: 0.04em;
   margin-bottom: 4px;
 }
-.modal-form {
-  position: relative;
-}
 
 .modal-icon {
   color: #4d5ae5;
@@ -769,6 +769,7 @@ address {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 .check-text {
   width: 338px;
@@ -779,6 +780,10 @@ address {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
+}
+
+.check-text span {
+  fill: transparent;
 }
 .check-privacy {
   color: #4d5ae5;
@@ -794,11 +799,9 @@ address {
 .modal-btn-send {
   display: block;
   min-width: 169px;
-  width: 105px;
+  margin: 0 auto;
   height: 56px;
- font-family: "Roboto", sans-serif 
-  align-items: flex-start;
-  gap: 10px;
+  font-family: "Roboto", sans-serif;
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -810,8 +813,6 @@ address {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  position: absolute;
-  right: 120px;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -827,8 +828,8 @@ address {
   text-decoration-line: underline;
 }
 
-.modal-checkbox:checked + .check-text span{
+.modal-checkbox:checked + .check-text span {
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
+  fill: #d9d9d9;
 }
